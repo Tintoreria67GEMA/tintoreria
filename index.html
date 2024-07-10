@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tintorería y Lavandería GEMA</title>
+  <meta name="description" content="Servicios de lavado en seco, planchaduría, lavandería, lavado de edredones y cobertores en GEMA. Contáctanos ahora.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Metaetiquetas Open Graph para redes sociales -->
+  <meta property="og:title" content="Tintorería y Lavandería GEMA">
+  <meta property="og:description" content="Servicios de lavado en seco, planchaduría, lavandería, lavado de edredones y cobertores en GEMA. Contáctanos ahora.">
+  <meta property="og:image" content="https://tusitio.com/path-to-your-image.jpg">
+  <meta property="og:url" content="https://tusitio.com">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    body {
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: white;
+      text-align: center;
+      font-family: 'Poppins', sans-serif; /* Fuente estilizada */
+    }
+    .container {
+      margin-top: 20px;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    .services {
+      margin: 20px 0;
+      font-family: 'Poppins', sans-serif;
+    }
+    .services h3 {
+      font-size: 24px;
+      font-weight: 600; /* Font-weight bold */
+      color: white;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    .services ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .services ul li a {
+      display: inline-block;
+      font-size: 16px; /* Tamaño de la fuente reducido */
+      font-weight: 600; /* Ajustado para que el texto sea más visible */
+      color: black;
+      margin-bottom: 5px; /* Reducción del espacio entre botones */
+      padding: 5px 10px; /* Ajuste del espacio interno del botón */
+      background-color: white;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    .services ul li a:hover {
+      background-color: #f0f0f0;
+    }
+    .contact-footer {
+      position: fixed;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      background-color: white;
+      color: black;
+      padding: 10px;
+      border-top: 1px solid #ccc;
+      text-align: center;
+      z-index: 1000; /* Asegura que el footer esté siempre por encima del contenido */
+      border-radius: 6px;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    .contact-footer a {
+      color: black;
+      text-decoration: none;
+      font-weight: 600; /* Font-weight bold */
+      font-family: 'Courier New', Courier, monospace;
+    }
+    .contact-footer img {
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+    .section {
+      padding: 60px 20px;
+      margin: 20px 0;
+      border-radius: 10px;
+      background-color: rgba(0, 0, 0, 0.6);
+      text-align: justify;
+    }
+    .section h2 {
+      color: white;
+      font-weight: 600; /* Font-weight bold */
+    }
+    .section p {
+      color: white;
+      font-weight: 400; /* Font-weight normal */
+      font-size: 20px; /* Aumento del tamaño de la fuente */
+    }
+    .section img {
+      display: block;
+      margin: 20px auto;
+      max-width: 300px; /* Ajuste del tamaño máximo de la imagen */
+      height: auto;
+    }
+    .service-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .modal-container {
+      height: 90vh;
+   
+    }
+    .modal-dialog {
+      color: black;
+      width: 80%;
+    }
+    button {
+      color: #f0f0f0;
+    }
+    @media (max-width: 767px) {
+      .container img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  </style>
+</head>
+<body background="ropa.webp">
+  <div class="container">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <h1>Tintorería y Lavandería GEMA</h1>
+    <img src="logo nuevo 2.png" width="180" height="180" alt="Logo de GEMA">
+    <br><br>
+  </div>
+  <br> <br> <br>
+  <div class="container">
+    <div class="services" style="font-family: Arial, sans-serif;">
+      <h3 style="font-size: 24px; font-weight: bold; color: #fff;">Nuestros servicios son:</h3>
+      <ul style="list-style-type: none; padding: 0;">
+        <li><a href="#" class="btn" data-toggle="modal" data-target="#modalHoteles">Servicio a Hoteles y Restaurantes</a></li>
+        <br>
+        <li><a href="#" class="btn" data-toggle="modal" data-target="#modalLavadoSeco">Lavado en seco</a></li>
+        <br>
+        <li><a href="#" class="btn" data-toggle="modal" data-target="#modalPlanchaduria">Planchaduría</a></li>
+        <br>
+        <li><a href="#" class="btn" data-toggle="modal" data-target="#modalLavanderia">Lavandería</a></li>
+        <br>
+        <li><a href="#" class="btn" data-toggle="modal" data-target="#modalCobertores">Lavado de cobertores y edredones</a></li>
+        <br>
+        <br>
+        <li><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modalInformacion">Más información</a></li>
+        <br>
+      </ul>
+    </div>
+
+<!-- Modal Servicio a Hoteles y Restaurantes -->
+<div id="modalHoteles" class="modal fade">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <button class="close" data-dismiss="modal">&times;</button>
+              <h2>Servicio a Hoteles y Restaurantes</h2>
+              <img src="logo actualizado.png" alt="Logo de GEMA" style="float: right; width: 80px; height: auto; margin-left: 10px;">
+          </div>
+          <div class="modal-body">
+              <h1>Servicio a Hoteles y Restaurantes</h1>
+              <p><h4>Ofrecemos servicios de lavandería y tintorería para hoteles y restaurantes, garantizando la limpieza y presentación 
+                  impecable de sus textiles. Nos aseguramos de que sus huéspedes y clientes disfruten de una experiencia de alta calidad 
+                  con ropa de cama, toallas, manteles y servilletas perfectamente limpios y presentados.</h4></p>
+              <img src="hotel.webp" width="1100" height="900">
+          </div>
+      </div>
+  </div>
+</div>
+
+    <!-- Modal Lavado en seco -->
+    <div id="modalLavadoSeco" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" data-dismiss="modal">&times;</button>
+            <h2>Lavado en seco</h2>
+            <img src="logo actualizado.png" alt="Logo de GEMA" style="float: right; width: 80px; height: auto; margin-left: 10px;">
+          </div>
+          <div class="modal-body">
+            <h1>Lavado en seco </h1>
+            <p><h4>El lavado en seco es un proceso de limpieza de prendas y textiles que utiliza solventes químicos en lugar de agua. 
+              Este método es ideal para tejidos delicados y prendas que podrían dañarse con el lavado tradicional en agua, como lana, 
+              seda y ciertos materiales sintéticos.</h4></p>
+              <img src="LAVADO EN SECO2.png" width="700" height="700">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Planchaduría -->
+    <div id="modalPlanchaduria" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" data-dismiss="modal">&times;</button>
+            <h2>Planchaduría</h2>
+            <img src="logo actualizado.png" alt="Logo de GEMA" style="float: right; width: 80px; height: auto; margin-left: 10px;">
+          </div>
+          <div class="modal-body">
+            <h1>Planchaduría</h1>
+            <p><h4>La planchaduría es un servicio especializado en el alisado y acabado de prendas de vestir y textiles del hogar mediante 
+              el uso de planchas y equipos de vapor.</h4></p>
+              <img src="planchaduria.webp">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Lavandería -->
+    <div id="modalLavanderia" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" data-dismiss="modal">&times;</button>
+            <h2>Lavandería</h2>
+            <img src="logo actualizado.png" alt="Logo de GEMA" style="float: right; width: 80px; height: auto; margin-left: 10px;">
+          </div>
+          <div class="modal-body">
+            <h1>Lavandería</h1>
+            <p><h4>La lavandería es un servicio profesional de limpieza de ropa y textiles que utiliza agua, detergentes y suavizantes para 
+              eliminar suciedad, manchas y olores.</h4></p>
+              <img src="lavanderia.webp">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Lavado de cobertores y edredones -->
+    <div id="modalCobertores" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" data-dismiss="modal">&times;</button>
+            <h2>Lavado de cobertores y edredones</h2>
+            <img src="logo actualizado.png" alt="Logo de GEMA" style="float: right; width: 80px; height: auto; margin-left: 10px;">
+          </div>
+          <div class="modal-body">
+            <h1>Lavado de cobertores y edredones</h1>
+            <p><h4>El lavado de cobertores es un servicio especializado en la limpieza de mantas gruesas y pesadas, utilizadas para abrigarse 
+              en la cama.</h4></p>
+              <img src="lavado de ed y cob.webp">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal Más información -->
+    <div id="modalInformacion" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" data-dismiss="modal">&times;</button>
+            <h2>Sobre Tintorería y Lavandería GEMA</h2>
+            <img src="logo actualizado.png" alt="Logo de GEMA" style="float: right; width: 80px; height: auto; margin-left: 10px;">
+          </div>
+          <div class="modal-body">
+            <h1>Sobre Tintorería y Lavandería GEMA</h1>
+            <p>
+             <h4> GEMA es una empresa comprometida con la calidad y el servicio en el cuidado de tus prendas. Con años de experiencia en la industria,
+              hemos perfeccionado nuestros procesos para garantizar la máxima satisfacción de nuestros clientes. Nuestro equipo está compuesto por
+              profesionales dedicados y apasionados por ofrecer un servicio de excelencia.</h4>
+            </p>
+            <p>
+             <h4> Nuestra misión es proporcionar un servicio de lavandería y tintorería de alta calidad que se adapte a las necesidades de cada cliente.
+              Valoramos la confianza que depositas en nosotros y trabajamos arduamente para cuidar cada prenda como si fuera nuestra.
+            </h4>
+            </p>
+            <p>
+             <h4> En GEMA, creemos en la importancia de la sostenibilidad y la responsabilidad ambiental. Utilizamos productos y métodos que minimizan el
+              impacto ambiental sin comprometer la eficacia de nuestros servicios. Estamos comprometidos con un futuro más limpio y saludable para todos.
+            </h4>
+            </p>
+            <p>
+             <h4>Agradecemos tu preferencia y nos esforzamos continuamente por mejorar y adaptarnos a las nuevas tecnologías y tendencias del mercado.</h4>
+            </p>
+            <p><h4>¡Gracias por elegirnos!</h4></p>
+            <img src="mas info.webp" width="700" height="700">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<br><br><br><br><br><br><br><br>
+    <!-- Footer de contacto -->
+    <div class="contact-footer">
+      <a href="https://wa.me/message/OSH4BAQKHXZDJ1" target="_blank">
+        <img src="wats.jpg" alt="WhatsApp" width="20" height="20">
+        ¡Contáctanos!
+        ¡Haz click y te llevará con un asistente!
+      </a>
+      <p>Teléfono: 44 3221 7788</p>
+    </div>
+  </div>
+</body>
+</html>
